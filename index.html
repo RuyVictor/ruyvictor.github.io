@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <!-- ThreeJS -->
+    <script src="https://jeromeetienne.github.io/threex.terrain/examples/vendor/three.js/build/three-min.js"></script>
+    <script src="https://jeromeetienne.github.io/threex.terrain/examples/vendor/three.js/examples/js/SimplexNoise.js"></script>
+    <script src="https://jeromeetienne.github.io/threex.terrain/threex.terrain.js"></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oxanium:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Less -->
+    <link rel="stylesheet/less" type="text/css" href="./less/index.less" />
+    <script src="//cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <!-- Hamburguer CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+    />
+    <!-- Font Aewsome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!-- Main JavaScript -->
+    <script src="javascript/index.js" defer></script>
+    <script src="javascript/three.js" defer></script>
+    <script src="javascript/scroll.js" defer></script>
+    <title>Ruy Victor / Desenvolvedor FullStack</title>
+    <link
+      rel="icon"
+      href="/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <!-- NAV -->
+
+        <header>
+          <nav class="nav-desktop">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre mim</a>
+            <a href="#skills">Conhecimentos</a>
+            <a href="#projects">Portifólio</a>
+            <a href="#contact">Contato</a>
+          </nav>
+
+          <nav class="nav-mobile">
+            <button class="hamburger hamburger--arrowturn" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+
+            <div class="mobile-menu">
+              <a href="#home">Home</a>
+              <a href="#about">Sobre mim</a>
+              <a href="#skills">Conhecimentos</a>
+              <a href="#projects">Portifólio</a>
+              <a href="#contact">Contato</a>
+            </div>
+          </nav>
+        </header>
+
+        <!-- SECTIONS -->
+
+        <section id="home">
+          <div class="canvas"></div>
+          <div class="presentation-box">
+            <div class="header-title" style="--stacks: 3">
+              <span style="--index: 0">RUY VICTOR</span>
+              <span style="--index: 1">RUY VICTOR</span>
+              <span style="--index: 2">RUY VICTOR</span>
+            </div>
+            <hr class="title-hr" />
+            <span class="header-sub-title-1"
+              >DESENVOLVEDOR
+              <span class="header-sub-title-2">FULLSTACK</span></span
+            >
+            <div class="presentation-links-box">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://docs.google.com/gview?embedded=true&url=https://docs.google.com/document/d/1_4rzBoUnCckfNuybsg20i0DpDyY6919zst50nehzqco/export?format=pdf"
+                class="presentation-link-button"
+                >Visualizar CV</a
+              >
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.linkedin.com/in/ruy-victor-451923184/"
+                class="presentation-link-button"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/RuyVictor"
+                class="presentation-link-button"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+
+        <section id="about">
+          <div class="section-header">
+            <div class="section-header-box">
+              <span class="section-header-title">Sobre mim</span>
+              <div class="section-header-divider-box">
+                <span class="section-header-divider-circle"></span>
+                <div class="section-header-divider-top"></div>
+              </div>
+            </div>
+            <img class="bars" src="assets/images/bars.svg" alt="My Happy SVG" />
+            <div class="section-header-divider-top"></div>
+          </div>
+
+          <div class="section-header-divider-bottom"></div>
+
+          <div class="about-box">
+            <img src="/assets/images/squares.svg" />
+            <span>
+              Meu nome é Ruy Victor, tenho 21 anos e moro em Cabo de Santo
+              Agostinho - PE. Sou Desenvolvedor FullStack e atualmente estou
+              cursando Ciência da Computação.
+              <br /><br />
+              Estou a mais de 4 anos estudando e desenvolvendo projetos para web e
+              mobile. Sou apaixonado por codificação e resolução de problemas
+              através do código, e estou animado para trabalhar ao lado de
+              outros programadores incríveis para aprender muito mais!
+            </span>
+          </div>
+        </section>
+
+        <section id="skills">
+          <div class="section-header">
+            <div class="section-header-box">
+              <span class="section-header-title">Conhecimentos</span>
+              <div class="section-header-divider-box">
+                <span class="section-header-divider-circle"></span>
+                <div class="section-header-divider-top"></div>
+              </div>
+            </div>
+            <img class="bars" src="assets/images/bars.svg" />
+            <div class="section-header-divider-top"></div>
+          </div>
+
+          <div class="section-header-divider-bottom"></div>
+
+          <div class="skills-box">
+            <img src="/assets/images/squares.svg" />
+            <div class="skills-box-limiter">
+              <div class="single-skill-box">
+                <img
+                  class="skill-svg"
+                  src="assets/images/skills/typescript.svg"
+                  alt="My Happy SVG"
+                />
+                <div class="skill-info">
+                  <span>Typescript.</span>
+                </div>
+              </div>
+
+              <div class="single-skill-box">
+                <div class="skill-info">
+                  <span>ReactJS e React Native.</span>
+                </div>
+                <img
+                  class="skill-svg"
+                  src="assets/images/skills/react.svg"
+                  alt="My Happy SVG"
+                />
+              </div>
+
+              <div class="single-skill-box">
+                <img
+                  class="skill-svg"
+                  src="assets/images/skills/nodejs.svg"
+                  alt="My Happy SVG"
+                />
+                <div class="skill-info">
+                  <span>NodeJS.</span>
+                </div>
+              </div>
+
+              <div class="single-skill-box">
+                <div class="skill-info">
+                  <span>Flutter.</span>
+                </div>
+                <img
+                  class="skill-svg"
+                  src="assets/images/skills/flutter.svg"
+                  alt="My Happy SVG"
+                />
+              </div>
+
+              <div class="single-skill-box">
+                <img
+                  class="skill-svg"
+                  src="assets/images/skills/mongodb.svg"
+                  alt="My Happy SVG"
+                />
+                <div class="skill-info">
+                  <span>MongoDB.</span>
+                </div>
+              </div>
+
+              <div class="single-skill-box">
+                <div class="skill-info">
+                  <span>TypeORM.</span>
+                </div>
+                <img
+                  class="skill-svg"
+                  src="assets/images/skills/typeorm.svg"
+                  alt="My Happy SVG"
+                />
+              </div>
+
+              <div class="single-skill-box">
+                <img
+                  class="skill-svg"
+                  src="assets/images/skills/styledcomponents.svg"
+                  alt="My Happy SVG"
+                />
+                <div class="skill-info">
+                  <span>Styled Components.</span>
+                </div>
+              </div>
+
+              <div class="single-skill-box">
+                <div class="skill-info">
+                  <span>ExpressJS.</span>
+                </div>
+                <img
+                  class="skill-svg"
+                  src="assets/images/skills/expressjs.svg"
+                  alt="My Happy SVG"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects">
+          <div class="section-header">
+            <div class="section-header-box">
+              <span class="section-header-title">Portifólio</span>
+              <div class="section-header-divider-box">
+                <span class="section-header-divider-circle"></span>
+                <div class="section-header-divider-top"></div>
+              </div>
+            </div>
+            <img class="bars" src="assets/images/bars.svg" alt="My Happy SVG" />
+            <div class="section-header-divider-top"></div>
+          </div>
+
+          <div class="section-header-divider-bottom"></div>
+
+          <div class="projects-box">
+            <a
+              target="_blank"
+              href="https://github.com/RuyVictor/streaming-frontend-tcc"
+              rel="noopener noreferrer"
+              class="single-project-box"
+            >
+              <img
+                class="project-box-image"
+                src="https://raw.githubusercontent.com/RuyVictor/streaming-frontend-tcc/main/landingpage1.jpg"
+              />
+              <img
+                class="arrow-icon"
+                src="assets/images/arrow.svg"
+                alt="My Happy SVG"
+              />
+              <div class="project-info-box">
+                <span>Vídeo streaming</span>
+              </div>
+            </a>
+
+            <a
+              target="_blank"
+              href="https://github.com/RuyVictor/capyba-app-challenge"
+              rel="noopener noreferrer"
+              class="single-project-box"
+            >
+              <img
+                class="project-box-image"
+                src="https://raw.githubusercontent.com/RuyVictor/capyba-app-challenge/main/presentation_3.png"
+              />
+              <img
+                class="arrow-icon"
+                src="assets/images/arrow.svg"
+                alt="My Happy SVG"
+              />
+              <div class="project-info-box">
+                <span>App Flutter + Firebase Auth</span>
+              </div>
+            </a>
+
+            <a
+              target="_blank"
+              href="https://github.com/RuyVictor/jwt-app"
+              rel="noopener noreferrer"
+              class="single-project-box"
+            >
+              <img
+                class="project-box-image"
+                src="https://raw.githubusercontent.com/RuyVictor/jwt-app/main/presentation.jpg"
+              />
+              <img
+                class="arrow-icon"
+                src="assets/images/arrow.svg"
+                alt="My Happy SVG"
+              />
+              <div class="project-info-box">
+                <span>App React Native + JWT Auth</span>
+              </div>
+            </a>
+
+            <a
+              target="_blank"
+              href="https://github.com/RuyVictor/phaser-game-multiplayer"
+              rel="noopener noreferrer"
+              class="single-project-box"
+            >
+              <img
+                class="project-box-image"
+                src="https://raw.githubusercontent.com/RuyVictor/phaser-game-multiplayer/main/presentation.jpg"
+              />
+              <img
+                class="arrow-icon"
+                src="assets/images/arrow.svg"
+                alt="My Happy SVG"
+              />
+              <div class="project-info-box">
+                <span>Multiplayer Game</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="show-more">
+            <div class="section-header-divider-bottom"></div>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/RuyVictor"
+              >Confira mais no meu GitHub!</a
+            >
+            <div class="section-header-divider-bottom"></div>
+          </div>
+        </section>
+
+        <section id="contact">
+          <div class="section-header">
+            <div class="section-header-box">
+              <span class="section-header-title">Contato</span>
+              <div class="section-header-divider-box">
+                <span class="section-header-divider-circle"></span>
+                <div class="section-header-divider-top"></div>
+              </div>
+            </div>
+            <img class="bars" src="assets/images/bars.svg" alt="My Happy SVG" />
+            <div class="section-header-divider-top"></div>
+          </div>
+
+          <div class="section-header-divider-bottom"></div>
+
+          <div class="contact-info-box">
+            <a href="mailto:devruyvictor@gmail.com" class="email-contact"
+              ><i class="fa-solid fa-at"></i> devruyvictor@gmail.com</a
+            >
+            <form
+              class="contact-form"
+              action="https://formsubmit.co/19239a9c227857974ccafbc2d046235b"
+              method="POST"
+            >
+              <label for="nameInput" class="contact-label">Seu nome</label>
+              <input
+                type="text"
+                maxlength="50"
+                id="nameInput"
+                name="name"
+                class="contact-input"
+                required
+                placeholder="Seu nome"
+              />
+              <label for="emailInput" class="contact-label">Seu email</label>
+              <input
+                type="email"
+                id="emailInput"
+                name="email"
+                class="contact-input"
+                required
+                placeholder="Seu email"
+              />
+              <label for="messageInput" maxlength="500" class="contact-label"
+                >Sua mensagem</label
+              >
+              <textarea
+                class="contact-input"
+                name="message"
+                id="messageInput"
+                rows="8"
+                required
+                placeholder="Sua mensagem"
+              ></textarea>
+              <button type="submit" target="_blank" rel="noopener noreferrer">
+                Enviar mensagem
+              </button>
+            </form>
+            <img src="/assets/images/squares.svg" />
+          </div>
+        </section>
+
+        <div class="section-header-divider-bottom"></div>
+
+        <!-- FOOTER -->
+
+        <footer>
+          <span>© 2022 Criado orgulhosamente por Ruy Victor.</span>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

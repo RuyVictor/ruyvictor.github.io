@@ -1,0 +1,26 @@
+@import "reset";
+@import "variables";
+@import "canvas";
+@import "section-header";
+@import "section-home";
+@import "section-about";
+@import "section-skills";
+@import "section-projects";
+@import "components/contact-form";
+@import "components/glitch";
+@import "footer";
+@import "nav";
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px; // preservar a visualização do header quando scrollar
+}
+
+body {
+  background-color: @secundaryColor;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}

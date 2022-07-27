@@ -1,0 +1,106 @@
+#projects .section-header {
+  background-color: @primaryColor;
+  .bars {
+    filter: invert(1) brightness(1);
+  }
+
+  > .section-header-divider-top {
+    background-color: @secundaryColor;
+  }
+}
+
+.projects-box {
+  background-color: @secundaryColor;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 50px;
+  position: relative;
+
+  ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/squares.svg);
+    opacity: 0.01;
+    background-position: top;
+    filter: invert(1);
+  }
+}
+
+/* 12% de corte sobre as extremidades da div */
+
+@cuttedLeftCornerWidth: 12%;
+@cuttedRightCornerWidth: ~"calc(100% - @{cuttedLeftCornerWidth})";
+
+.single-project-box {
+  background-color: @primaryColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  aspect-ratio: 1;
+  z-index: 999;
+  overflow: hidden;
+
+  clip-path: polygon(@cuttedLeftCornerWidth 0, 100% 0, 100% @cuttedRightCornerWidth, @cuttedRightCornerWidth 100%, 0 100%, 0 @cuttedLeftCornerWidth);
+   
+  position: relative;
+
+  &:hover .project-info-box {
+    background-color: @red;
+  }
+}
+
+.project-box-image {
+  width: 100%;
+  height: @cuttedRightCornerWidth;
+  object-fit: cover;
+  object-position: left top;
+}
+
+.project-info-box {
+  width: 100%;
+  /* cor com 12% do tamanho total da div para encaixar perfeitamente ao corte */
+  height: @cuttedLeftCornerWidth;
+  background-color: @primaryColor;
+  transition: all 200ms;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 0.8rem;
+    color: @secundaryColor;
+  }
+}
+
+.arrow-icon {
+  width: 10%;
+  z-index: 3;
+  position: absolute;
+  top: 92.5%;
+  right: 15%;
+}
+
+.show-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  gap: 20px;
+
+  > a {
+    color: @primaryColor;
+    transform: skew(-10deg);
+    font-size: 1rem;
+    white-space: nowrap;
+    transition: all 200ms;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

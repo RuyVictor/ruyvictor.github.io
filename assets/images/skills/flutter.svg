@@ -1,0 +1,18 @@
+<svg width="209" height="84" viewBox="0 0 209 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M208.5 0H180.214V2.57143H205.929V28.2857H208.5V0ZM208.5 55.7143V84H180.214V81.4286H205.929V55.7143H208.5ZM127.071 2.57143H152.786V0H124.5V28.2857H127.071V2.57143ZM152.786 81.4286V84H124.5V55.7143H127.071V81.4286H152.786Z" fill="#8D8D8D"/>
+<rect x="131.5" y="7" width="69" height="69" fill="#474747"/>
+<circle cx="141.5" cy="57.5" r="6" transform="rotate(-180 141.5 57.5)" stroke="white"/>
+<circle cx="141.5" cy="57.5" r="2.5" transform="rotate(-180 141.5 57.5)" fill="white"/>
+<path d="M135.5 57.5H62L38 76H0" stroke="white"/>
+<path d="M171.471 18L148 41.4711L155.264 48.7355L186 18H171.471Z" fill="#47C5FB"/>
+<path d="M171.307 39.6445L158.74 52.2115L166.032 59.6114L173.283 52.3603L186 39.6445H171.307Z" fill="#47C5FB"/>
+<path d="M166.032 59.6114L171.551 65.1312H186L173.283 52.3604L166.032 59.6114Z" fill="#00569E"/>
+<path d="M158.659 52.2918L165.923 45.0273L173.283 52.3603L166.032 59.6114L158.659 52.2918Z" fill="#00B5F8"/>
+<path d="M166.032 59.6111L172.07 57.6075L172.669 52.9734L166.032 59.6111Z" fill="url(#paint0_linear_117_26)" fill-opacity="0.8"/>
+<defs>
+<linearGradient id="paint0_linear_117_26" x1="166.155" y1="55.1481" x2="170.93" y2="56.8692" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
